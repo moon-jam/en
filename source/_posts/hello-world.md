@@ -7,6 +7,7 @@ tags:
 abbrlink: 16107
 date: 2023-07-04 00:00:00
 top: true
+lang: en
 ---
 
 # My blog has been done～～
