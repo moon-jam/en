@@ -4,13 +4,13 @@ comments: false
 permalink: /404.html
 ---
 
-## 這是一個不存在的頁面
+## OOPS! Page Not Found
 
-很抱歉，目前這個連結已經失效
+Sorry, this link is invaild.
 
-預計將在約 <span id="timeout">5</span> 秒後返回首頁。
+It will go back home in <span id="timeout">5</span> s
 
-如果你很急著想看文章，你可以 **[點這裡](/)** 返回首頁。
+If you want to read my article, you can **[click here](/)** to go back home.
 
 <script>
 let countTime = 5;
