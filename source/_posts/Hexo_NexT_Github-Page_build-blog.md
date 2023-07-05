@@ -14,9 +14,8 @@ hidden: true
 
 我的這個Blog就是用Hexo建的，趁今天剛做完打第一篇教學文，這東東其實蠻簡單的，除非你要裝一些酷酷的東西，然後就會搞很久(然後最後還是有些沒用出來QAQ
 
+## 參考資料
 
-
-# 參考資料
 這裡面蠻多是別人的部落格，然後就會被發現我跟他們長差不多，就東抄西抄(XD
 [【學習筆記】如何使用 Hexo + GitHub Pages 架設個人網誌](https://hackmd.io/@Heidi-Liu/note-hexo-github#常用指令)
 [使用 Hexo 建構個人化部落格 (六角學院的教學，基本上就跟著做就完成了)](https://youtu.be/jOJI9ekTzK8)

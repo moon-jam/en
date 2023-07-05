@@ -10,9 +10,9 @@ top: true
 lang: en
 ---
 
-# My blog has been done～～
+## My blog has been done～～
 
-It took me almost ten hours!! So tired😮‍💨
+It took me almost 10 hours!! So tired😮‍💨
 
 Many powerful people have their own blogs, so I also made one, ~~It seems that now I am as powerful as them~~
 <!--看到好多厲害的人都有自己的 Blog，所以就也做了一個，~~看來現在我也跟他們一樣厲害了呢~~-->

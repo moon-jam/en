@@ -388,8 +388,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: github-dark
-    dark: github-dark
+    light: vs2015
+    dark: vs2015
   prism:
     light: prism
     dark: prism-dark
