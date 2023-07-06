@@ -10,6 +10,7 @@ categories:
 abbrlink: 19590
 date: 2023-07-04 00:00:00
 hidden: true
+description: "Hexo_NexT_Github-Page_build-blog"
 ---
 
 我的這個Blog就是用Hexo建的，趁今天剛做完打第一篇教學文，這東東其實蠻簡單的，除非你要裝一些酷酷的東西，然後就會搞很久(然後最後還是有些沒用出來QAQ
