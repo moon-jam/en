@@ -38,8 +38,8 @@ custom_file_path:
 # Schemes
 # scheme: Muse
 # scheme: Mist
-# scheme: Pisces
-scheme: Gemini
+scheme: Pisces
+# scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -116,7 +116,8 @@ menu:
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  Switch Langague: https://moon-jam.github.io || fa-solid fa-language
+  Shuffle Article: /random/ || fa fa-shuffle
+  Switch Langague: https://moon-jam.github.io || fa fa-language
   # schedule: /schedule/ || fa fa-calendar
   # sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -275,14 +276,6 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
-  symbols: true # 文章是否顯示字數統計
-  time: true # 文章是否顯示閱讀時間
-  total_symbols: true # 網頁底部是否顯示字數統計
-  total_time: true # 網頁底部是否顯示閱讀時間
-  exclude_codeblock: true # 排除程式碼字數統計
-  awl: 2 #平均文字長度，中文為 2, 英文為 5, 預設為 4
-  wpm: 275 #一分鐘閱讀字數，預設為 275
-  suffix: "mins."
   separated_meta: true
   item_text_post: true
   item_text_total: true
