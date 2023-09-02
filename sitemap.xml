@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://moon-jam.me/en/about/index.html</loc>
+    <loc>https://moon-jam.me/Diary/about/index.html</loc>
     
     <lastmod>2023-07-11</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://moon-jam.me/en/hello-world/</loc>
+    <loc>https://moon-jam.me/Diary/hello-world/</loc>
     
     <lastmod>2023-07-11</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://moon-jam.me/en/404.html</loc>
+    <loc>https://moon-jam.me/Diary/404.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://moon-jam.me/en/categories/index.html</loc>
+    <loc>https://moon-jam.me/Diary/categories/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://moon-jam.me/en/tags/index.html</loc>
+    <loc>https://moon-jam.me/Diary/tags/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -48,16 +48,16 @@
   
 
   <url>
-    <loc>https://moon-jam.me/en</loc>
-    <lastmod>2023-08-16</lastmod>
+    <loc>https://moon-jam.me/Diary</loc>
+    <lastmod>2023-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://moon-jam.me/en/tags/Pandaaa/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <loc>https://moon-jam.me/Diary/tags/Pandaaa/</loc>
+    <lastmod>2023-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -65,8 +65,8 @@
 
   
   <url>
-    <loc>https://moon-jam.me/en/categories/Pandaaa/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <loc>https://moon-jam.me/Diary/categories/Pandaaa/</loc>
+    <lastmod>2023-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
