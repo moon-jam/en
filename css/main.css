@@ -2390,7 +2390,7 @@ mark.search-keyword {
 }
 header.header {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 0 0 12px 12px;
   box-shadow: initial;
 }
 @media (max-width: 991px) {
@@ -2427,7 +2427,7 @@ header.header {
   }
 }
 .main-inner {
-  border-radius: initial;
+  border-radius: 0 0 12px 12px;
   box-sizing: border-box;
   width: calc(100% - 252px);
 }
@@ -2568,7 +2568,7 @@ header.header {
 }
 .sidebar-inner {
   background: var(--content-bg-color);
-  border-radius: initial;
+  border-radius: 12px;
   box-shadow: initial;
   box-sizing: border-box;
   color: var(--text-color);
