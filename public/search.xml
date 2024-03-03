@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Using &amp;lt;bits/extc++.h&amp;gt; Header File on MacOS (Example with VSCode)</title>
+    <url>/en/bits_extc++_on_macos/</url>
+    <content><![CDATA[<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><div class="note info"><p>To conclude first, it’s difficult to use the <code>&lt;bits/extc++.h&gt;</code> header file with Clang as the compiler, as it will generate various mysterious errors. This article adopts the method of installing GCC via Homebrew and using GCC as the compiler.</p>
+</div>
+<span id="more"></span>
+
+<p>I originally wanted to try pbds while doing CSES problem set, but I found it completely unusable. There seems to be no solution on the internet, so after some research, this article was born.</p>
+<h2 id="Install-Homebrew-if-not-already-installed"><a href="#Install-Homebrew-if-not-already-installed" class="headerlink" title="Install Homebrew (if not already installed)"></a>Install Homebrew (if not already installed)</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Install-GCC"><a href="#Install-GCC" class="headerlink" title="Install GCC"></a>Install GCC</h2><p>Here you can choose to install different versions of GCC, but note that Macs with Arm architecture (M series chips) only support GCC version 11 and above.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Install the latest version of GCC</span></span><br><span class="line">brew install gcc</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install GCC 11</span></span><br><span class="line">brew install gcc@11</span><br></pre></td></tr></table></figure>
+
+<h2 id="Use-GCC-Compiler"><a href="#Use-GCC-Compiler" class="headerlink" title="Use GCC Compiler"></a>Use GCC Compiler</h2><p>If you don’t know the installed GCC version, you can use the following command to check:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> /usr/local/bin/gcc*  <span class="comment"># Intel Mac</span></span><br><span class="line"><span class="built_in">ls</span> /opt/homebrew/bin/gcc*  <span class="comment"># Apple Silicon Mac</span></span><br></pre></td></tr></table></figure>
+
+<p>Once you’ve confirmed the exact version number of GCC (for example, gcc-11), you can use that version of GCC to compile your code. For example, if the GCC version is 11, run:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">g++-11 example.cpp -o Example</span><br><span class="line"></span><br><span class="line"><span class="comment"># If you want to compile with a specific version of C++ (for example, C++11), you can run</span></span><br><span class="line">g++-11 example.cpp -o example -std=c++11</span><br></pre></td></tr></table></figure>
+
+<h2 id="Use-GCC-in-VSCode"><a href="#Use-GCC-in-VSCode" class="headerlink" title="Use GCC in VSCode"></a>Use GCC in VSCode</h2><h3 id="Use-C-x2F-C-Compile-Run-Extension"><a href="#Use-C-x2F-C-Compile-Run-Extension" class="headerlink" title="Use C&#x2F;C++ Compile Run Extension"></a>Use <a href="https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run">C&#x2F;C++ Compile Run</a> Extension</h3><p>Go to the extension settings page, search for <code>C-cpp-compile-run: Cpp-compiler</code>, and set it to use gcc for compilation.<br><img data-src="https://i.imgur.com/aUY9uQR.png" alt="Set to use gcc for compilation"></p>
+<h3 id="Use-Competitive-Programming-Helper-cph-Extension"><a href="#Use-Competitive-Programming-Helper-cph-Extension" class="headerlink" title="Use Competitive Programming Helper (cph) Extension"></a>Use <a href="https://marketplace.visualstudio.com/items?itemName=DivyanshuAgrawal.competitive-programming-helper">Competitive Programming Helper (cph)</a> Extension</h3><p>Go to the extension settings page, search for <code>cph.language.cpp.Command</code>, and set it to use gcc for compilation.<br><img data-src="https://i.imgur.com/xKEDhsr.png" alt="Set to use gcc for compilation"></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Now you can use the <code>&lt;bits/extc++.h&gt;</code> header file on MacOS. You can try whether the following code runs correctly:</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/extc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> __gnu_pbds;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    tree&lt;<span class="type">int</span>, null_type, less&lt;<span class="type">int</span>&gt;, rb_tree_tag, tree_order_statistics_node_update&gt; s;</span><br><span class="line">    s.<span class="built_in">insert</span>(<span class="number">1</span>);</span><br><span class="line">    s.<span class="built_in">insert</span>(<span class="number">3</span>);</span><br><span class="line">    cout &lt;&lt; *s.<span class="built_in">find_by_order</span>(<span class="number">1</span>) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>; <span class="comment">// Outputs the second element (3)</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>If you have any questions about using GCC and the <code>&lt;bits/extc++.h&gt;</code> header file on MacOS, feel free to discuss in the comments below.</p>
+]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>c++</tag>
+        <tag>MacOS</tag>
+        <tag>Environment Setup</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/en/hello-world/</url>
+    <content><![CDATA[<h2 id="My-blog-has-been-done～～"><a href="#My-blog-has-been-done～～" class="headerlink" title="My blog has been done～～"></a>My blog has been done～～</h2><p>It took me almost 10 hours!! So tired😮‍💨</p>
+<span id="more"></span>
+<p>Many powerful people have their own blogs, so I also made one, <del>It seems that now I am as powerful as them</del></p>
+<!--看到好多厲害的人都有自己的 Blog，所以就也做了一個，~~看來現在我也跟他們一樣厲害了呢~~-->
+
+<p>I will write something to make here look cool. I haven’t drawn my avatar and favicon. I will put it here later.</p>
+<!--
+之後有空應該會竟量寫些東西，讓這邊看起來猛猛ㄉ
+還差 favicon 跟我的頭像都還沒有，之後有了再到這邊放一下好了
+-->
+
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>I have set up my avatar and favicon~ I’m not good at draw, so I learned stable diffusion to generate pictures. However, because my computer is so slow, it takes almost a minute for a 512x512 image. But at least they look very pretty😃</p>
+<p><img data-src="/en/images/Panda_Me.png" alt="Avatar"><br><img data-src="/en/images/favicon_180.png" alt="Favicon"></p>
+]]></content>
+      <categories>
+        <category>Pandaaa</category>
+      </categories>
+      <tags>
+        <tag>Pandaaa</tag>
+      </tags>
+  </entry>
+</search>
