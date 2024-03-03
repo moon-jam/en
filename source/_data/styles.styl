@@ -58,9 +58,18 @@ span#inline-green {
     margin-right: 16px;
 }
 
+/*修改h3前面圖標*/
+.posts-expand .post-body h3:before{
+    content: "📌";
+    margin-right: 14px;
+}
+
 .post-body .note {
     border-radius: 10px;
     color: black;
+    a {
+        color: black;
+    }
 }
 
 .post-body .note:not(.no-icon)::before {
@@ -72,6 +81,7 @@ span#inline-green {
 
 // Custom styles.
 code {
+    isolation: isolate;
     color: #c7254e; //文字顏色
     background: #f9f2f4; //底色
     margin: 2px;
